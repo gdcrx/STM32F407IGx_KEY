@@ -190,7 +190,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     HAL_Delay(20);/* 延时一小段时间，消除抖动 */
     if(HAL_GPIO_ReadPin(KEY1_GPIO,KEY1_GPIO_PIN)==KEY1_DOWN_LEVEL)
     {
-     
+      .HAL_UART_RxCpltCallback
       LED1_ON;
     }
     __HAL_GPIO_EXTI_CLEAR_IT(KEY1_GPIO_PIN);
